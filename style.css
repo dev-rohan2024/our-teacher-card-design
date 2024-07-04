@@ -1,0 +1,163 @@
+/* ============ import google font (Poppins) ============ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ============ global css start ============ */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ============ global css end ============ */
+/* ============ body css start ============ */
+body {
+  background-color: #e8f2f8;
+  display: flex;
+  justify-content: center;
+  /* margin: 50px 0px; */
+}
+/* ============ body css end ============ */
+/* ============ meet our teacher css start ============ */
+.wrapper h1 {
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wrapper h1::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 155px;
+  height: 2px;
+  top: 101%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.wrapper .team-member {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #7b00e0, #ae31d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.wrapper .team-member:hover {
+  width: 370px;
+  height: 445px;
+  border-radius: 7px;
+}
+
+.team-member .member-image img {
+  width: 200px;
+  height: 200px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 20;
+  margin-top: 5px;
+}
+
+.team-member .member-title h3 {
+  color: #ffff;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  display: none;
+}
+
+.wrapper .team-member:hover .member-title h3 {
+  display: block;
+}
+
+.team-member .member-location p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  display: none;
+  margin-bottom: 0px;
+}
+
+.wrapper .team-member:hover .member-location p {
+  display: block;
+}
+
+.team-member .member-dsce p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.wrapper .team-member:hover .member-dsce p {
+  display: block;
+}
+
+.team-member .following-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.team-member .following-btn button {
+  width: 150px;
+  height: 41px;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+  display: none;
+}
+
+.wrapper .team-member:hover .following-btn button {
+  display: block;
+}
+
+.team-member .following-btn button:active,
+.team-member .social-media i:active {
+  transform: scale(0.9);
+}
+
+.team-member .social-media {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.team-member .social-media i {
+  width: 37px;
+  height: 37px;
+  background-color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.1s ease-in;
+}
+
+.wrapper .team-member:hover .social-media i {
+  display: flex;
+}
+/* ============ meet our teacher css end ============ */
